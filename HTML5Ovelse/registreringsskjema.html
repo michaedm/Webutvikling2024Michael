@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="nb">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Forside</title>
+    </head>
+    <body>
+        <header>
+            <a href="index.html">sidens navn</a>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Hjem</a>
+                    </li>
+                    <li>
+                        <a href="validering.html">Validering</a>
+                    </li>
+                    <li>
+                        <a href="nettsidemal.html">Nettsidemal</a>
+                    </li>
+                    <li> <a href="kontaktoss.html">Kontakt oss</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <form method="post">
+                    <label>
+                        Navn:
+                        <input type="text" pattern="[A-Za-zæøåÆØÅ ]{2,}" required>
+                    </label>
+                    
+
+                    <label>
+                        E-post:
+                        <input type="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+                    </label>
+
+                    <label>
+                        Passord:
+                        <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                    </label>
+                    
+                    <label>
+                        Alder
+                        <input type="number" min="18" max="99" required>
+                    </label>
+
+                    <label>
+                        Telefonnummer:
+                        <input pattern="[0-9]{8,12}" required>
+                    </label>
+
+                    <label>
+                        Fødselsdato:
+                        <input type="date" max="2023-12-31" required>
+                    </label>
+
+                    <h3>Kjønn:</h3>
+                    <label>
+                        Mann
+                        <input type="radio" name="kjønn" required>
+                    </label>
+                    <label>
+                        Kvinne
+                        <input type="radio" name="kjønn" required>
+                    </label>
+                    <label>
+                        Annet
+                        <input type="radio" name="kjønn" required>
+                    </label>
+
+                    <label>
+                        Land
+                        <select name="land" required>
+                            <option value="Norge">Norge</option>
+                            <option value="Sverige">Sverige</option>
+                            <option value="Danmark">Danmark</option>
+                        </select>
+                        
+                    </label>
+
+                    <label>
+                        Personvern:
+                        <input type="checkbox" required>
+                    </label>
+                    
+                    <label>
+                        <input type="submit">
+                    </label>
+
+                </form>
+            </section>
+            
+        </main>
+        <footer>
+            <p>Michael-M michaedm@hiof.no</p>
+        </footer>
+    </body>
+</html>
