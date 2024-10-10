@@ -1,0 +1,89 @@
+body{
+    display: flex;
+    margin: 0;
+}
+
+#grid-container{
+    display: grid;
+    grid-template-columns: 0.5fr 3fr 0.5fr;
+    grid-template-rows: auto auto auto auto;
+    min-height: 100vh;
+    row-gap: 3rem;
+}
+
+header{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/pasta.jpg");
+    background-size: cover;
+}
+
+nav{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: flex;
+}
+
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 1rem;
+
+}
+
+nav ul li a{
+    text-decoration: none;
+}
+
+main{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+main section{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+main section h2{
+    width: 100%;
+}
+
+main section article{
+    display: flex;
+    max-width: 400px;
+    min-width: 300px;
+    box-shadow: 13px 9px 20px 0px #efefef;
+    border-radius: 4px;
+    padding: 1rem;
+}
+
+aside{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+footer{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    background-color: black;
+}
+
+footer p{
+    color: white;
+}
